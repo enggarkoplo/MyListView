@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private String[] dataName;
+    private String[] dataName ;
     private String[] dataDescription;
     private TypedArray dataPhoto;
     private HeroAdapter adapter;
@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+                
         adapter = new HeroAdapter(this);
         ListView listView = findViewById(R.id.lv_list);
         listView.setAdapter(adapter);
